@@ -1,11 +1,6 @@
 
 **Veggy Store Spring Boot** project:-
-
 ---
-
-markdown
-#  Veggy Store - Spring Boot Backend
-
 **Veggy Store**, a simple and efficient Spring Boot backend service for managing an online vegetable store. This application supports RESTful APIs.
 
 
