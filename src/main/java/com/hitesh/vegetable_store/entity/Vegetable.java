@@ -10,12 +10,10 @@ import java.util.List;
 import java.util.Set;
 
 @Entity
-@Data
 @Table(name = "vegetables")
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
+
 public class Vegetable {
 
 //    Fields: id, name, price, stockQuantity
@@ -43,5 +41,8 @@ public class Vegetable {
     )
     @JsonManagedReference
     private Set<Supplier> suppliers = new HashSet<>();
+
+
+
 
 }

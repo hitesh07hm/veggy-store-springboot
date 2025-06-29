@@ -5,12 +5,9 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Data
 @Table(name = "order_items")
 @Setter
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
 public class OrderItem {
 
 //    Fields: id, order, vegetable, quantity, totalPrice

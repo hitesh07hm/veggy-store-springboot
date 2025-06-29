@@ -11,12 +11,10 @@ import java.util.List;
 import java.util.Set;
 
 @Entity
-@Data
 @Table(name = "suppliers")
 @Setter
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
+
 public class Supplier {
 //    Fields: id, name, contact
 //    Many-to-Many relationship with Vegetables
@@ -34,9 +32,5 @@ public class Supplier {
     @ManyToMany(mappedBy = "suppliers", fetch = FetchType.LAZY)
     @JsonBackReference
     private Set<Vegetable> vegetables = new HashSet<>();
-
-
-
-
 }
 

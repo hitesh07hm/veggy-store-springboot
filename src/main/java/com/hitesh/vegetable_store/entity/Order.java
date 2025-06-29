@@ -10,12 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Data
 @Table(name = "orders")
 @Setter
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
 public class Order {
 
     @Id

@@ -8,12 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Data
 @Table(name = "customers")
-@Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Getter
+
 public class Customer {
 
 
@@ -27,7 +25,7 @@ public class Customer {
     @Column(nullable = false, unique = true)
     private String email;
 
-
+    @Column(name = "address")
     private String address;
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch= FetchType.LAZY)
